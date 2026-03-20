@@ -1,19 +1,13 @@
-import MonthCard from '../components/MonthCard'
-import { months } from '../data/months'
+import Carousel3D from '../components/Carousel3D.jsx'
 
 function Home() {
   return (
-    <main className="home-page">
-      <header className="hero">
-        <h1>Якутский календарь</h1>
-        <p>Выберите месяц</p>
+    <main className="home-page home-page--gallery">
+      <header className="gallery-header">
+        <p className="gallery-header__eyebrow">Якутский календарь</p>
       </header>
 
-      <section className="months-grid">
-        {months.map((month) => (
-          <MonthCard key={month.id} month={month} />
-        ))}
-      </section>
+      <Carousel3D />
     </main>
   )
 }
