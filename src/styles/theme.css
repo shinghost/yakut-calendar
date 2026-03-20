@@ -339,6 +339,7 @@
     padding: 24px;
     box-shadow: 0 24px 70px rgba(29, 53, 87, 0.12);
     border: 1px solid rgba(29, 53, 87, 0.08);
+    overflow: visible;
   }
   
   .month-calendar-section__header {
@@ -361,6 +362,7 @@
     display: grid;
     grid-template-columns: repeat(7, minmax(90px, 1fr));
     gap: 16px;
+    overflow: visible;
   }
   
   .calendar-day {
@@ -372,10 +374,13 @@
     padding: 14px;
     box-shadow: 0 10px 24px rgba(29, 53, 87, 0.07);
     transition: transform 0.22s ease, box-shadow 0.22s ease;
+    overflow: visible;
+    z-index: 1;
   }
   
   .calendar-day:hover {
     transform: translateY(-4px);
+    z-index: 30;
   }
   
   .calendar-day__number {
@@ -385,9 +390,18 @@
   }
   
   .calendar-day--event {
-    background: rgba(168, 218, 220, 0.22);
+    background:
+      linear-gradient(rgba(168, 218, 220, 0.18), rgba(168, 218, 220, 0.18)),
+      url('/images/ui/jaw.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
   }
+  .calendar-day--event .calendar-day__number,
+  .calendar-day--event .calendar-day__label {
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.55);
+}
   
   .calendar-day__dot {
     position: absolute;
@@ -424,14 +438,16 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.22s ease, transform 0.22s ease;
-    z-index: 20;
+    transform: translateY(6px);
+    z-index: 999;
   }
   
   .calendar-day--event:hover .event-card {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50%);
+    transform: translateY(0);
   }
+
   
   .event-card__image-wrap {
     height: 180px;

@@ -2,6 +2,7 @@ export const months = [
     {
       id: 'january',
       order: 1,
+      monthNumber: 1,
       titleYakut: 'Тохсунньу',
       titleRu: 'Январь',
       description: 'Суровый зимний месяц',
@@ -12,6 +13,7 @@ export const months = [
     {
       id: 'february',
       order: 2,
+      monthNumber: 2,
       titleYakut: 'Олунньу',
       titleRu: 'Февраль',
       description: 'Поздняя зима',
@@ -22,6 +24,7 @@ export const months = [
     {
       id: 'march',
       order: 3,
+      monthNumber: 3,
       titleYakut: 'Кулун тутар',
       titleRu: 'Март',
       description: 'Переход к весне',
@@ -32,6 +35,7 @@ export const months = [
     {
       id: 'april',
       order: 4,
+      monthNumber: 4,
       titleYakut: 'Муус устар',
       titleRu: 'Апрель',
       description: 'Пробуждение природы',
@@ -42,6 +46,7 @@ export const months = [
     {
       id: 'may',
       order: 5,
+      monthNumber: 5,
       titleYakut: 'Ыам ыйа',
       titleRu: 'Май',
       description: 'Активная весна',
@@ -52,6 +57,7 @@ export const months = [
     {
       id: 'june',
       order: 6,
+      monthNumber: 6,
       titleYakut: 'Бэс ыйа',
       titleRu: 'Июнь',
       description: 'Начало лета',
@@ -62,6 +68,7 @@ export const months = [
     {
       id: 'july',
       order: 7,
+      monthNumber: 7,
       titleYakut: 'От ыйа',
       titleRu: 'Июль',
       description: 'Разгар лета',
@@ -72,6 +79,7 @@ export const months = [
     {
       id: 'august',
       order: 8,
+      monthNumber: 8,
       titleYakut: 'Атырдьах ыйа',
       titleRu: 'Август',
       description: 'Завершение лета',
@@ -82,6 +90,7 @@ export const months = [
     {
       id: 'september',
       order: 9,
+      monthNumber: 9,
       titleYakut: 'Балаҕан ыйа',
       titleRu: 'Сентябрь',
       description: 'Начало осени',
@@ -92,6 +101,7 @@ export const months = [
     {
       id: 'october',
       order: 10,
+      monthNumber: 10,
       titleYakut: 'Алтынньы',
       titleRu: 'Октябрь',
       description: 'Осенний период',
@@ -102,6 +112,7 @@ export const months = [
     {
       id: 'november',
       order: 11,
+      monthNumber: 11,
       titleYakut: 'Сэтинньи',
       titleRu: 'Ноябрь',
       description: 'Предзимье',
@@ -112,6 +123,7 @@ export const months = [
     {
       id: 'december',
       order: 12,
+      monthNumber: 12,
       titleYakut: 'Ахсынньы',
       titleRu: 'Декабрь',
       description: 'Начало зимы',
